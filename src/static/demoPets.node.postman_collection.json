@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "dd0887ed-3d82-4e0d-b3d6-25614c355ec1",
+		"name": "demoPets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13328765"
+	},
+	"item": [
+		{
+			"name": "node",
+			"item": [
+				{
+					"name": "get all pets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pet by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pets/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pets",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Snowball 15\",\r\n    \"owner_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/pets",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Snowball 15x\",\r\n    \"owner_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/pets/25",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pets",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/pets/25",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pets",
+								"25"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
